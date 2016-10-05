@@ -28,6 +28,11 @@ header {
     display: flex;
     flex-direction: column;
     text-align: center;
+    /* height: 70px; */
+    position: fixed;
+    top: 0;
+    transition: top 0.2s ease-in-out;
+    width: 100%;
 }
 
     header > div#logo {
@@ -128,7 +133,8 @@ header {
                 box-shadow: 0 2px 8px rgba(0,0,0,.6);
                 display: none;
                 overflow: hidden;
-                position: absolute;
+                position: fixed;
+                height:70px;
                 right: 5%;
                 width: 90%;
                 z-index: 100;
@@ -153,6 +159,9 @@ p {
 }
 .space2 {
     margin-bottom: 40em;
+}
+.nav-up {
+    top: -100px;
 }
 
 /* Medium screens */
@@ -241,6 +250,9 @@ p {
     }
 .space {
     margin-top: 3em;
+}
+.nav-up {
+    top: 0px;
 }
 }
 
