@@ -19,17 +19,16 @@ body {
 }
 #page {
     margin: 0px auto 10px auto;
-    padding: 5px;
+    padding: 10px; /* Viktig, mellomrom fra kant til skrift */
     overflow: auto;
 }
 header {
-    background-color: #ffffff;
+    background-color: white;
     border-bottom: 1px solid rgba(0,0,0,.15);
     display: flex;
     flex-direction: column;
     text-align: center;
-    /* height: 70px; */
-    position: fixed;
+    position: fixed; /* må være fixed for å kunne bruke auto-hide */
     top: 0;
     transition: top 0.2s ease-in-out;
     width: 100%;
@@ -133,7 +132,7 @@ header {
                 box-shadow: 0 2px 8px rgba(0,0,0,.6);
                 display: none;
                 overflow: hidden;
-                position: fixed;
+                position: relative;
                 height:70px;
                 right: 5%;
                 width: 90%;
@@ -154,8 +153,11 @@ p {
     margin-bottom: 2em;
 }
 .space {
-    margin-top: 0em;
-    
+    margin-top: 5em;    
+    margin-bottom: 5em;
+}
+.space1 {
+    margin-bottom: 5em;
 }
 .space2 {
     margin-bottom: 40em;

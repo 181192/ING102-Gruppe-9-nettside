@@ -1,4 +1,5 @@
-﻿$(function () {
+﻿/* Auto scroll når en trykker på meny */
+$(function () {
     $('a[href*="#"]:not([href="#"])').click(function () {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
             var target = $(this.hash);
@@ -6,15 +7,16 @@
             if (target.length) {
                 $('html, body').animate({
                     scrollTop: target.offset().top
-                }, 500); // Justere hastighet her, i millisek
+                }, 500); // Justere scroll hastighet her, i millisek
                 return false;
             }
         }
+        
     });
 });
 
 
-// Hide Header on on scroll down
+/* Gjem header/meny linje i mobilvisning, når en scroller nedover */ 
 var didScroll;
 var lastScrollTop = 0;
 var delta = 5;
@@ -54,7 +56,8 @@ function hasScrolled() {
     lastScrollTop = st;
 }
 
-// fix rezize problem
+/* fiks resize problem, når en toggler mellom vindu størrelse på pc */
 $(window).resize(function (event) {
     $('header').addClass('nav-down');
 });
+
