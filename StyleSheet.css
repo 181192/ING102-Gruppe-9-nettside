@@ -166,6 +166,8 @@ p {
     top: -100px;
 }
 
+
+
 /* Medium screens */
 @media all and (min-width: 600px) {
     header > div#logo > div#navToggle {
@@ -258,7 +260,7 @@ p {
     margin-bottom: 0em;
 }
 .space3 {
-    margin-top: 3em;
+    margin-top: 5em;
 }
 .nav-up {
     top: 0px;
