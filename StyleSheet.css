@@ -251,6 +251,13 @@ p {
         width: 196px;
     }
 .space {
+    margin-top: 3em;    
+    margin-bottom: 0em;
+}
+.space1 {
+    margin-bottom: 0em;
+}
+.space3 {
     margin-top: 3em;
 }
 .nav-up {
