@@ -7,6 +7,7 @@
     <!-- Stylesheet -->
     <link href="StyleSheet.css" type="text/css" rel="stylesheet" />
     <link href="StyleSheet3.css" type="text/css" rel="stylesheet" />
+    <link href="StyleSheetPeder.css" type="text/css" rel="stylesheet" />
 
     <!-- jQuery libaries import -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
@@ -35,7 +36,7 @@
     </header>
     <article id="page">
         <section class="space">
-            <a name="HOVEDSIDE"><h1 id="one" class="space3">HOVEDSIDE</h1></a>
+            <a name="HOVEDSIDE"><h1 id="one" class="space3">ET WEBBYRÅ - FLERE PLATTFORMER</h1></a>
             <p>
                 Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
                 dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
@@ -48,7 +49,7 @@
             </p>
         </section>
         <section class="space1">
-            <a name="PORTFOLIO"><h1 id="two" class="space3">PORTFOLIO</h1></a>
+            <a name="PORTFOLIO"><h1 id="two" class="space3">RESTURANTER</h1></a>
             <p>
                 Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
                 dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
@@ -61,7 +62,7 @@
             </p>
         </section>
         <section class="space1">
-            <a name="BYRÅET"><h1 id="three" class="space3">BYRÅET</h1></a>
+            <a name="BYRÅET"><h1 id="three" class="space3">EN PLATTFORM - VELGE ELEMENTER</h1></a>
             <p>
                 Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
                 dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
@@ -73,7 +74,7 @@
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </p>
         </section>
-        <section class="space1">
+       <!-- <section class="space1">
             <a name="KONTAKT"><h1 id="four" class="space3">KONTAKT</h1></a>
             <p>
                 Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
@@ -85,14 +86,68 @@
                 dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </p>
-        </section>
-        <footer class="space2">
+        </section> -->
+        <section class="space2">
 
-        </footer>
+        </section>
 
     </article>
-    <footer>
+        <footer class="helefooten">
+            <div class="footer">
+                <article class="headline">
 
-    </footer>
+                    <div id="googleMap" class="rightcol"></div>
+                  <!--  <h1 class="skrift">Kontakt oss.</h1> -->
+                    <a name="KONTAKT"><h1 id="four" class="">KONTAKT OSS</h1></a>
+                    <div class="icons">
+                        <img src="City-Gps.png" alt="logo">
+                        <h3 class="skrift">Bergen, Norge. </h3>
+
+                        <img src="phone.png" alt="logo" />
+                        <h3 class="skrift">+47 815 00 657</h3>
+
+                        <img src="Gmail.png" alt="logo" />
+                        <h3 class="skrift"> Gruppe9@gmail.com</h3>
+
+                    </div>
+
+
+
+                    <p class="info">Hei! Du er hjertelig velkommet til vårt kontor på høyskolen i Bergen. Vi holder åpent man-fredag, fra 08-16. Kom gjerne innom for en prat om utvitklingen av din hjemmeside!. </p>
+
+
+
+
+                    <p class="bunn">hei hei 1!!logo her!!</p>
+                    <p class="right">Copyright 2016 Gruppe9.no. All rights reserved.</p>
+
+                </article>
+
+                <script src="https://maps.googleapis.com/maps/api/js"></script>
+                <script>
+            var myCenter = new google.maps.LatLng(60.3691361, 5.3496311);
+
+            function initialize() {
+            var mapProp = {
+              center: myCenter,
+              zoom: 12,
+              scrollwheel: false,
+              draggable: false,
+              mapTypeId: google.maps.MapTypeId.ROADMAP
+              };
+
+            var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+            var marker = new google.maps.Marker({
+              position: myCenter,
+            });
+
+            marker.setMap(map);
+            }
+
+            google.maps.event.addDomListener(window, 'load', initialize);
+                </script>
+            </div>
+        </footer>
 </body>
 </html>
