@@ -61,3 +61,19 @@ $(window).resize(function (event) {
     $('header').addClass('nav-down');
 });
 
+/* Bytte bakgrunns farge når en scroller i desktop mode */
+$(document).ready(function(){       
+   var scroll_start = 0;
+   var startchange = $('#startchange'); /* Start id-tag, må være en <p> (?) */
+   var offset = startchange.offset();
+   $(document).scroll(function() { 
+      scroll_start = $(this).scrollTop();
+      if(scroll_start > offset.top) {
+        /*  $('header').css('background-color', 'opacity: 0.8'); */ /* Markert ut, er for visst en ønsker farge */
+          $('header').addClass('opacity'); /* addClass */
+       } else {
+          $('header').css('background-color', 'white');
+          $('header').removeClass('opacity'); /* add og remove class fjerner opacity */
+       }
+   });
+});

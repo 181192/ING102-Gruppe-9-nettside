@@ -1,11 +1,16 @@
 ﻿/* Lukk menyen ved å trykke en annen plass på skjermen, som ikke inneholder meny elementer */
-$(document).click(function (event) {
-    if (!$(event.target).closest('nav').length) {
-        if ($('nav').is(":visible")) {
-            $('nav').hide();
+if (screen && screen.width > 600) {
+    document.write($(document).click(function (event) {
+        if (!$(event.target).closest('nav').length) {
+            if ($(window).width() <= "600") {
+                if ($('nav').is(":visible")) {
+                    $('nav').hide();
+                }
+            }
         }
     }
-})
+))};
+
 
 
 /* Mobilvisning */
