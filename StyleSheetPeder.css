@@ -97,8 +97,8 @@ h5 {
 .icons img{
 	float: right;
 	position: absolute;
-	width: 100px
-	height: 100px;
+	/* width: 100px;
+	height: 100px; */
 	background-color: #ffffff;
 	padding-left: 2px;
 	padding-top: 19px;

@@ -1,6 +1,8 @@
 ﻿/* Auto scroll når en trykker på meny */
+
 $(function () {
     $('a[href*="#"]:not([href="#"])').click(function () {
+        // if (openModal) return;
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
             var target = $(this.hash);
             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
@@ -11,12 +13,12 @@ $(function () {
                 return false;
             }
         }
-        
+
     });
 });
 
 
-/* Gjem header/meny linje i mobilvisning, når en scroller nedover */ 
+/* Gjem header/meny linje i mobilvisning, når en scroller nedover */
 var didScroll;
 var lastScrollTop = 0;
 var delta = 5;
@@ -62,18 +64,18 @@ $(window).resize(function (event) {
 });
 
 /* Bytte bakgrunns farge når en scroller i desktop mode */
-$(document).ready(function(){       
-   var scroll_start = 0;
-   var startchange = $('#startchange'); /* Start id-tag, må være en <p> (?) */
-   var offset = startchange.offset();
-   $(document).scroll(function() { 
-      scroll_start = $(this).scrollTop();
-      if(scroll_start > offset.top) {
-        /*  $('header').css('background-color', 'opacity: 0.8'); */ /* Markert ut, er for visst en ønsker farge */
-          $('header').addClass('opacity'); /* addClass */
-       } else {
-          $('header').css('background-color', 'white');
-          $('header').removeClass('opacity'); /* add og remove class fjerner opacity */
-       }
-   });
+$(document).ready(function () {
+    var scroll_start = 0;
+    var startchange = $('#startchange'); /* Start id-tag, må være en <p> (?) */
+    var offset = startchange.offset();
+    $(document).scroll(function () {
+        scroll_start = $(this).scrollTop();
+        if (scroll_start > offset.top) {
+            /*  $('header').css('background-color', 'opacity: 0.8'); */ /* Markert ut, er for visst en ønsker farge */
+            $('header').addClass('opacity'); /* addClass */
+        } else {
+            $('header').css('background-color', 'white');
+            $('header').removeClass('opacity'); /* add og remove class fjerner opacity */
+        }
+    });
 });
