@@ -91,6 +91,18 @@ h5 {
     text-align: center;
     padding-top: 20px;
 }
+/* Mobil slutt */
+
+
+
+
+
+
+/*  ******************************************
+    ******************************************
+    ******************************************
+    ******************************************
+*/
 
 
 
@@ -98,7 +110,7 @@ h5 {
     Her vil alt som skal være i desktop modus legges til, er det noe som skal endres må en huske å 
     skrive over de css kodene fra mobil-klassen, ellers så vil alt av koder her bli lagt oppå css koden til mobil
 */
-@media all and (min-width: 600px) {
+@media all and (min-width: 641px) {
 
     footer {
         margin: 0px auto 10px auto;
@@ -121,7 +133,7 @@ h5 {
         float: right;
     }
 
-    .bunn {     
+    .bunn {
         text-align: center;
         margin: 0px auto 10px auto;
         max-width: 70%;
@@ -139,5 +151,28 @@ h5 {
         min-width: 40%;
         padding: 20px;
         overflow: auto;
+    }
+}
+
+
+
+/*  ******************************************
+    ******************************************
+    ******************************************
+    ******************************************
+*/
+
+/* For tablets */
+@media all and (max-width: 961px) {
+    .rightcol { /* Google Map skal legge seg over kontakt oss*/
+        float: none;
+    }
+
+    .bunn {
+        margin-top: 800px;
+    }
+
+    .info {
+        margin-right: 50%;
     }
 }

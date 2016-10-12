@@ -38,7 +38,7 @@ $(document).ready(function () {
     });
 
     $("header > nav > ul > li > a").click(function (e) {
-        if ($(window).width() <= "600") {
+        if ($(window).width() <= "641") {
             if ($(this).siblings().size() > 0) {
                 e.preventDefault();
                 $(this).siblings().slideToggle("fast")
