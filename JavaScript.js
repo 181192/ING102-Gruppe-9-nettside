@@ -1,6 +1,6 @@
 ﻿
 /* Lukk menyen ved å trykke en annen plass på skjermen, som ikke inneholder meny elementer */
-if (screen && screen.width > 600) {
+if (screen && screen.width > 641) {
     document.write($(document).click(function (event) {
         if (!$(event.target).closest('nav').length) {
             if ($(window).width() <= "600") {
@@ -25,7 +25,7 @@ $(document).ready(function () {
 
     });
     $(window).resize(function () {
-        if ($(window).width() >= "600") { /* Mobil visning grense normal ~600px */
+        if ($(window).width() >= "641") { /* Mobil visning grense normal 641px */
             $("header > nav").css("display", "block");
 
             if ($("#logo").attr('class') == "menuDown") {
@@ -38,7 +38,7 @@ $(document).ready(function () {
     });
 
     $("header > nav > ul > li > a").click(function (e) {
-        if ($(window).width() <= "641") {
+        if ($(window).width() <= "641") { /* Mobil visning grense normal 641px */
             if ($(this).siblings().size() > 0) {
                 e.preventDefault();
                 $(this).siblings().slideToggle("fast")
@@ -47,6 +47,7 @@ $(document).ready(function () {
         }
     });
 });
+
 
 //Lager close til modalen over utsiden av iframe
 

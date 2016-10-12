@@ -44,7 +44,7 @@ header {
 }
 
     header > div#logo {
-        line-height: 70px;
+        line-height: 50px;
         position: relative;
     }
 
@@ -112,7 +112,7 @@ header {
                 display: block;
                 color: rgba(0,0,0,.65);
                 font-weight: 700;
-                padding: 1.5rem 0;
+                padding: 0.9rem 0;
                 text-decoration: none;
                 transition: 250ms all ease;
             }
@@ -142,7 +142,7 @@ header {
         display: none;
         overflow: hidden;
         position: relative;
-        height: 60px;
+        height: 40px;
         right: 5%;
         width: 90%;
         z-index: 100;
