@@ -429,8 +429,8 @@ p {
     width: 257px;
     height: 187px;
     margin-right: 5%;
-    margin-bottom: 10px;
-    float: left;
+    margin-bottom: 10px;    
+    display: inline;
 }
 .HoverImg{
     border-radius: 5px;
