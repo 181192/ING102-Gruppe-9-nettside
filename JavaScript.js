@@ -1,4 +1,5 @@
-﻿/* Lukk menyen ved å trykke en annen plass på skjermen, som ikke inneholder meny elementer */
+﻿
+/* Lukk menyen ved å trykke en annen plass på skjermen, som ikke inneholder meny elementer */
 if (screen && screen.width > 600) {
     document.write($(document).click(function (event) {
         if (!$(event.target).closest('nav').length) {
@@ -56,4 +57,7 @@ $('.modalclose ').click(function(){
 $('.inner').click(function(e){
    e.stopPropagation();
 })                                            
+
+
+
 
