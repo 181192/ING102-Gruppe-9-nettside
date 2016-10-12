@@ -43,7 +43,7 @@
     </header>
     <!-- Header slutt -->
     <article id="page">
-        <section class="space">
+        <section id="startchange" class="space">
             <!-- name atributt hører til anker funksjon, slik at #HOVEDSIDE peker på name="HOVEDSIDE",
                  altså så vil menyen peke på element lenger ned inni samme nettside -->
             <a name="HOVEDSIDE"><h1 id="one" class="space3">ET WEBBYRÅ - FLERE PLATTFORMER</h1></a>
@@ -58,46 +58,39 @@
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </p>
         </section>
-        <!-- Dette er modal biten, den har en knapp som åpner en html-side -->
-        <section>
-            <h3>KLIKK FOR Å SE EN LIVE-DEMO!</h3>
-            <br />
 
-            <!-- Å bruke knapp overstyrer javascriptet for smooth scrolling, kan ikke bruke vanlig "hyperlink" den funker ikke -->
-            <button class="HoverImg" id="resturant" onclick="location.href='#openModal'"></button>
-            <button class="HoverImg" id="resturant" onclick="location.href='#openModal'"></button>
-            <button class="HoverImg" id="resturant" onclick="location.href='#openModal'"></button>
 
-            <div id="openModal" class="modalDialog">
-                <div class="wrapper h_iframe">
-                    <a href="#close" title="Close" class="modalclose"></a>
-                    <img class="ratio" src="http://images.all-free-download.com/images/graphiclarge/plain_white_background_211387.jpg" /> <!-- Link til hvit bakgrunn, må laste ned seinere -->
-                    <!--
-                        iframe funksjon, denne viser en nettside inne i modal elementet
-                        Det er en del variabler som scrolling (gjøre at en kan scrolle), frameborder (får en nettleser kant)
-                        allowfullscreen (maksimerer nettsiden som blir visst i modal),
-                        Resten av stylingen ligger i StyleSheet.css
-                    -->
-                    <iframe src="http://home.hib.no/studenter/h181192/resturant/index.html" name="targetframe" allowTransparency="true" scrolling="yes" frameborder="0" allowfullscreen></iframe>
+        <section class="space1">
+            <a name="PORTFOLIO"><h1 id="two" class="space3">PORTFOLIO</h1></a>
+            <!-- Dette er modal biten, den har en knapp som åpner en html-side -->
+            <section>
+                <br />
+                <h3>KLIKK FOR Å SE EN LIVE-DEMO!</h3>
+                <br />
+
+                <!-- Å bruke knapp overstyrer javascriptet for smooth scrolling, kan ikke bruke vanlig "hyperlink" den funker ikke -->
+                <button class="HoverImg" id="resturant" onclick="location.href='#openModal'"></button>
+                <button class="HoverImg" id="resturant" onclick="location.href='#openModal'"></button>
+                <button class="HoverImg" id="resturant" onclick="location.href='#openModal'"></button>
+
+                <div id="openModal" class="modalDialog">
+                    <div class="wrapper h_iframe">
+                        <a href="#close" title="Close" class="modalclose"></a>
+                        <img class="ratio" src="http://images.all-free-download.com/images/graphiclarge/plain_white_background_211387.jpg" /> <!-- Link til hvit bakgrunn, må laste ned seinere -->
+                        <!--
+                            iframe funksjon, denne viser en nettside inne i modal elementet
+                            Det er en del variabler som scrolling (gjøre at en kan scrolle), frameborder (får en nettleser kant)
+                            allowfullscreen (maksimerer nettsiden som blir visst i modal),
+                            Resten av stylingen ligger i StyleSheet.css
+                        -->
+                        <iframe src="http://home.hib.no/studenter/h181192/resturant/index.html" name="targetframe" allowTransparency="true" scrolling="yes" frameborder="0" allowfullscreen></iframe>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <!-- Modal slutt -->
-        <section class="space1">
-            <a name="PORTFOLIO"><h1 id="two" class="space3">RESTURANTER</h1></a>
-            <p id="startchange">
-                Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
-            <p>
-                Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
+            </section>
+            <!-- Modal slutt -->
         </section>
         <section class="space1">
-            <a name="BYRÅET"><h1 id="three" class="space3">EN PLATTFORM - VELGE ELEMENTER</h1></a>
+            <a name="BYRÅET"><h1 id="three" class="space3">BYRÅET</h1></a>
             <p>
                 Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
                 dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
@@ -107,8 +100,8 @@
                 Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
                 dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </p> 
-        </section>           
+            </p>
+        </section>
     </article>
     <!-- Footeren, inneholder kontakt oss og google maps -->
     <!-- Footer nr1 for kontakt oss og map -->
@@ -133,7 +126,7 @@
                     Vi holder åpent man-fredag, fra 08-16. Kom gjerne innom for en prat
                     om utvitklingen av din hjemmeside!.
                 </p>
-               
+
             </article>
         </div>
     </footer>
