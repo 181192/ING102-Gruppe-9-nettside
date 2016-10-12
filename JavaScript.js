@@ -47,4 +47,13 @@ $(document).ready(function () {
     });
 });
 
+//Lager close til modalen over utsiden av iframe
+
+$('.modalclose ').click(function(){
+     $('.modalclose, .inner').hide();
+    
+})                                            
+$('.inner').click(function(e){
+   e.stopPropagation();
+})                                            
 
