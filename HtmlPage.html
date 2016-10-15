@@ -1,15 +1,17 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="no">
 <head>
     <title>oh yeah</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
     <!-- Stylesheet -->
     <link href="StyleSheet.css" type="text/css" rel="stylesheet" />
     <link href="StyleSheetFooter.css" type="text/css" rel="stylesheet" />
 
     <!-- jQuery libaries import -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <!-- Smooth scrooling jQuery code -->
     <script src="JQuery.js"></script>
 
@@ -22,119 +24,120 @@
     <script src="GoogleMap.js"></script>
 </head>
 <body>
-    <!-- Header -->
-    <header class="nav-down">
-        <div id="logo" class="menuUp">
-            <h1>#ThatLogO.</h1>
-            <!-- Toggle menyen i mobil visning, altså meny knapp toggle -->
-            <div id="navToggle">
-                <a href="#">Menu</a>
+    <article>
+        <!-- Header -->
+        <header class="nav-down">
+            <div id="logo" class="menuUp">
+                <h1>#ThatLogO.</h1>
+                <!-- Toggle menyen i mobil visning, altså meny knapp toggle -->
+                <div id="navToggle">
+                    <a href="#">Menu</a>
+                </div>
             </div>
-        </div>
-        <!-- Meny -->
-        <nav>
-            <ul>
-                <li><a href="#HOVEDSIDE">Hovedside</a></li>
-                <li><a href="#PORTFOLIO">Portfolio</a></li>
-                <li><a href="#BYRÅET">Byrået</a></li>
-                <li><a href="#KONTAKT">Kontakt</a></li>
-            </ul>
-        </nav>
-    </header>
-    <!-- Header slutt -->
-    <article id="page">
-        <section id="startchange" class="space">
-            <!-- name atributt hører til anker funksjon, slik at #HOVEDSIDE peker på name="HOVEDSIDE",
-                 altså så vil menyen peke på element lenger ned inni samme nettside -->
-            <a name="HOVEDSIDE"><h1 id="one" class="space3">ET WEBBYRÅ - FLERE PLATTFORMER</h1></a>
-            <p>
-                Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
-            <p>
-                Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
-        </section>
+            <!-- Meny -->
+            <nav>
+                <ul>
+                    <li><a href="#hovedside">Hovedside</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#byrået">Byrået</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Header slutt -->
+
+        <div id="page">
+            <section id="startchange" class="space">
+                <!-- name atributt hører til anker funksjon, slik at #HOVEDSIDE peker på name="HOVEDSIDE",
+                altså så vil menyen peke på element lenger ned inni samme nettside -->
+                <a id="hovedside"><h2 id="one" class="space3">ET WEBBYRÅ - FLERE PLATTFORMER</h2></a>
+                <p>
+                    Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <p>
+                    Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </section>
+            <section class="space1">
+                <a id="portfolio"><h2 id="two" class="space3">PORTFOLIO</h2></a>
+                <!-- Dette er modal biten, den har en knapp som åpner en html-side -->
+                <section>
+                    <br />
+                    <h3>KLIKK FOR Å SE EN LIVE-DEMO!</h3>
+                    <br />
+
+                    <!-- Å bruke knapp overstyrer javascriptet for smooth scrolling, kan ikke bruke vanlig "hyperlink" den funker ikke -->
+                    <button class="HoverImg" id="resturant1" onclick="location.href='#openModal'"></button>
+                    <button class="HoverImg" id="resturant2" onclick="location.href='#openModal'"></button>
+                    <button class="HoverImg" id="resturant3" onclick="location.href='#openModal'"></button>
 
 
-        <section class="space1">
-            <a name="PORTFOLIO"><h1 id="two" class="space3">PORTFOLIO</h1></a>
-            <!-- Dette er modal biten, den har en knapp som åpner en html-side -->
-            <section>
-                <br />
-                <h3>KLIKK FOR Å SE EN LIVE-DEMO!</h3>
-                <br />
-
-                <!-- Å bruke knapp overstyrer javascriptet for smooth scrolling, kan ikke bruke vanlig "hyperlink" den funker ikke -->
-                <button class="HoverImg" id="resturant" onclick="location.href='#openModal'"></button>
-                <button class="HoverImg" id="resturant" onclick="location.href='#openModal'"></button>
-                <button class="HoverImg" id="resturant" onclick="location.href='#openModal'"></button>
-
-                <div id="openModal" class="modalDialog">
-                    <div class="wrapper h_iframe">
-                        <a href="#close" title="Close" class="modalclose"></a>
-                        <img class="ratio" src="http://images.all-free-download.com/images/graphiclarge/plain_white_background_211387.jpg" /> <!-- Link til hvit bakgrunn, må laste ned seinere -->
-                        <!--
-                            iframe funksjon, denne viser en nettside inne i modal elementet
-                            Det er en del variabler som scrolling (gjøre at en kan scrolle), frameborder (får en nettleser kant)
-                            allowfullscreen (maksimerer nettsiden som blir visst i modal),
-                            Resten av stylingen ligger i StyleSheet.css
-                        -->
-                        <iframe src="http://home.hib.no/studenter/h181192/resturant/index.html" name="targetframe" allowTransparency="true" scrolling="yes" frameborder="0" allowfullscreen></iframe>
+                    <div id="openModal" class="modalDialog">
+                        <div class="wrapper h_iframe">
+                            <a href="#close" title="Close" class="modalclose"></a>
+                            <img class="ratio" alt="Hvit bakgrunn" src="http://images.all-free-download.com/images/graphiclarge/plain_white_background_211387.jpg" /> <!-- Link til hvit bakgrunn, må laste ned seinere -->
+                            <!--
+                                iframe funksjon, denne viser en nettside inne i modal elementet
+                                Det er en del variabler som scrolling (gjøre at en kan scrolle), frameborder (får en nettleser kant)
+                                allowfullscreen (maksimerer nettsiden som blir visst i modal),
+                                Resten av stylingen ligger i StyleSheet.css
+                            -->
+                            <!-- Scrolling atributt er utgått i HTML5, men "iframe { overflow:hidden; }" fungerer ikke i firefox og IE --> 
+                            <iframe src="http://home.hib.no/studenter/h181192/resturant/index.html" name="targetframe" scrolling="yes" allowfullscreen></iframe>
+                        </div>
                     </div>
+                </section>
+                <!-- Modal slutt -->
+            </section>
+            <section class="space1">
+                <a id="byrået"><h2 id="three" class="space3">BYRÅET</h2></a>
+                <p>
+                    Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <p>
+                    Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </section>
+        </div>
+        <!-- Footer nr.1 for kontakt oss og map -->
+        <footer>
+            <section>
+                <div class="headline">
+                    <a id="kontakt"><h2 id="four" class="">KONTAKT OSS</h2></a>
+                    <div id="googleMap" class="rightcol"></div>
+                    <div class="icons">
+                        <img src="City-Gps.png" alt="logo">
+                        <h3 class="skrift">Bergen, Norge. </h3>
+
+                        <img src="phone.png" alt="logo" />
+                        <h3 class="skrift">+47 815 00 657</h3>
+
+                        <img src="Gmail.png" alt="logo" />
+                        <h3 class="skrift"> Gruppe9@gmail.com</h3>
+                    </div>
+                    <p class="info">
+                        Hei! Du er hjertelig velkommet til vårt kontor på høyskolen i Bergen.
+                        Vi holder åpent man-fredag, fra 08-16. Kom gjerne innom for en prat
+                        om utvitklingen av din hjemmeside!.
+                    </p>
                 </div>
             </section>
-            <!-- Modal slutt -->
-        </section>
-        <section class="space1">
-            <a name="BYRÅET"><h1 id="three" class="space3">BYRÅET</h1></a>
-            <p>
-                Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
-            <p>
-                Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
-        </section>
+        </footer>
+        <!-- Footer nr.1 slutt -->
+        <!-- Footer nr.2 for logo og copyrigth -->
+        <footer>
+            <p class="bunn">#thatlogo.</p>
+            <p class="right">Copyright 2016 Gruppe9.no All rights reserved.</p>
+        </footer>
+        <!-- Footer nr.2 slutt -->
     </article>
-    <!-- Footeren, inneholder kontakt oss og google maps -->
-    <!-- Footer nr1 for kontakt oss og map -->
-    <footer>
-        <div>
-            <article class="headline">
-                <div id="googleMap" class="rightcol"></div>
-                <a name="KONTAKT"><h1 id="four" class="">KONTAKT OSS</h1></a>
-                <div class="icons">
-                    <img src="City-Gps.png" alt="logo">
-                    <h3 class="skrift">Bergen, Norge. </h3>
-
-                    <img src="phone.png" alt="logo" />
-                    <h3 class="skrift">+47 815 00 657</h3>
-
-                    <img src="Gmail.png" alt="logo" />
-                    <h3 class="skrift"> Gruppe9@gmail.com</h3>
-                </div>
-
-                <p class="info">
-                    Hei! Du er hjertelig velkommet til vårt kontor på høyskolen i Bergen.
-                    Vi holder åpent man-fredag, fra 08-16. Kom gjerne innom for en prat
-                    om utvitklingen av din hjemmeside!.
-                </p>
-
-            </article>
-        </div>
-    </footer>
-    <!-- Footer nr2. for logo og copyrigth -->
-    <footer>
-        <p class="bunn">#thatlogo.</p>
-        <p class="right">Copyright 2016 Gruppe9.no All rights reserved.</p>
-    </footer>
-    <!-- Footer slutt -->
 </body>
 </html>
